@@ -69,9 +69,10 @@ const actions = {
   },
 
   // fetch-weather bot executes
-  ['fetch-weather'](sessionId, context, cb) {
+  ['getForecast'](sessionId, context, cb) {
     // Here should go the api call, e.g.:
-    // context.forecast = apiCall(context.loc)
+        //context.forecast = apiCall(context.loc)
+      console.log("fo**********************************o", context);
     context.forecast = 'sunny';
     cb(context);
   },
